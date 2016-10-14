@@ -1,0 +1,26 @@
+// The container will "contain" content to the various defined breakpoints
+
+.container {
+  @extend %clearfix !optional;
+
+  &--xl {
+    max-width: map-deep-get($breakpoint-map, xl, max-width);
+  }
+
+  &--lg {
+    max-width: map-deep-get($breakpoint-map, lg, max-width);
+  }
+
+  &--md {
+    max-width: map-deep-get($breakpoint-map, md, max-width);
+  }
+
+  &--sm {
+    max-width: map-deep-get($breakpoint-map, sm, max-width);
+  }
+
+  &--xs {
+    max-width: map-deep-get($breakpoint-map, xs, max-width);
+  }
+
+}

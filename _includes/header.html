@@ -1,0 +1,12 @@
+<header>
+  <nav>
+    <ul style="list-style: none;">
+      {% for page in site.html_pages %}
+        <li style="display: inline-block;">
+          <a href="{{ page.url | prepend: site.baseurl }}" style="padding: 0 0.5rem;">{{ page.title | escape }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+</header>

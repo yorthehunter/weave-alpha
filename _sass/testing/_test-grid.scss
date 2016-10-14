@@ -1,0 +1,38 @@
+.test-grid {
+  height: 100vh;
+
+  $base-blueprint: $color--blue;
+
+  background-color: transparent;
+  // background-image: linear-gradient(90deg, rgba($base-blueprint, 0.1) 1px, transparent 1px) !important;
+  background-image: linear-gradient(0deg, rgba($base-blueprint, 0.1) 1px, transparent 1px);
+  background-size: 16px 8px;
+  // background-size: calc(#{1/12 * 100%} - 1px) 8px, calc(#{1/12 * 100%} - 1px) 8px !important;
+  // background-position: 16px, 0px, left !important;
+
+  padding-top: 1rem;
+
+  .grid-row {
+    & > div {
+      background-color: rgba($color--mint, 0.25);
+      min-height: 3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend %f-xs !optional;
+
+      &:after {
+        content: attr(class);
+      }
+    }
+
+  }
+
+  .test-watermelon-bg > div {
+    background-color: rgba($color--watermelon, 0.25);
+  }
+
+
+}
