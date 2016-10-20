@@ -25,48 +25,47 @@ $size-name-map: (
 
 // The unit of measurement we want to stick to
 // More technically, the base rem unit we share throughout
-$base-visual-rhythm: 8px;
+$base-visual-rhythm: 8px default;
 
 /* Colors
 ------------------------------------------------------------------------------*/
 
 // Brand colors
-$color--mint-dark:           #00A19A;
-$color--mint:                #00BDB4;
-$color--mint-lightest:       #DDF8F7;
-$color--watermelon:          #F05D61;
-$color--watermelon-light:    #F6A2A4;
-$color--watermelon-lightest: #FFCDD2;
+$color--mint-dark:           #00A19A default;
+$color--mint:                #00BDB4 default;
+$color--mint-lightest:       #DDF8F7 default;
+$color--watermelon:          #F05D61 default;
+$color--watermelon-light:    #F6A2A4 default;
+$color--watermelon-lightest: #FFCDD2 default;
 
 // UI colors
-$color--blue:         #0079B3;
-$color--blue-light:   #0099E0;
-$color--yellow:       #FFEE7E;
-$color--yellow-light: #FFFAD6;
-$color--gray-dark:    #303030;
-$color--gray:         #727272;
-$color--gray-light:   #D5D5D5;
-$color--gray-lighter: #F7F7F7;
-$color--white:        #FFFFFF;
+$color--blue:         #2F8AB6 default;
+$color--yellow:       #FFEE7E default;
+$color--yellow-light: #FFFAD6 default;
+$color--gray-dark:    #303030 default;
+$color--gray:         #727272 default;
+$color--gray-light:   #D5D5D5 default;
+$color--gray-lighter: #F7F7F7 default;
+$color--white:        #FFFFFF default;
 
 // Secondary colors
-$color--secondary--cyan:        #F05D61;
-$color--secondary--pink:        #00A19A;
-$color--secondary--amber:       #2F3237;
-$color--secondary--deep-orange: #FFCDD2;
-$color--secondary--lime:        #B2DFDB;
-$color--secondary--deep-purple: #2F3237;
+$color--secondary--cyan:        #F05D61 default;
+$color--secondary--pink:        #00A19A default;
+$color--secondary--amber:       #2F3237 default;
+$color--secondary--deep-orange: #FFCDD2 default;
+$color--secondary--lime:        #B2DFDB default;
+$color--secondary--deep-purple: #2F3237 default;
 
 // Transparency colors
-$transparent--black-75: rgba(0, 0, 0, 0.75);
-$transparent--black-50: rgba(0, 0, 0, 0.50);
-$transparent--black-25: rgba(0, 0, 0, 0.25);
-$transparent--black-10: rgba(0, 0, 0, 0.10);
+$transparent--black-75: rgba(0, 0, 0, 0.75) default;
+$transparent--black-50: rgba(0, 0, 0, 0.50) default;
+$transparent--black-25: rgba(0, 0, 0, 0.25) default;
+$transparent--black-10: rgba(0, 0, 0, 0.10) default;
 
-$toast-bg:         $transparent--black-75;
-$snackbar-bg:      $transparent--black-75;
-$modal-overlay:    $transparent--black-50;
-$calendar-overlay: $transparent--black-25;
+$toast-bg:         $transparent--black-75 default;
+$snackbar-bg:      $transparent--black-75 default;
+$modal-overlay:    $transparent--black-50 default;
+$calendar-overlay: $transparent--black-25 default;
 
 /* Viewports
 ------------------------------------------------------------------------------*/
@@ -334,7 +333,7 @@ $inset__lg:  $padding-lg;
 $inset__md:  $padding-md;
 $inset__sm:  $padding-sm;
 $inset__xs:  $padding-xs;
-$inset__xxs:  $padding-xxs;
+$inset__xxs: $padding-xxs;
 
 $stack__xl:  $margin-xl;
 $stack__lg:  $margin-lg;
@@ -370,7 +369,7 @@ $transition__easing--default: ease-in-out;
 $transition__easing--complex: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 // Links
-$link-color: $color--blue-light;
+$link-color: $color--blue;
 
 // Buttons
 $button--primary:   $color--blue;
